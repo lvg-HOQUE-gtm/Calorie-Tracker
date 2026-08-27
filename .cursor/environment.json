@@ -1,0 +1,13 @@
+{
+  "name": "Sky Strike",
+  "ports": [
+    { "name": "web", "port": 8000 }
+  ],
+  "terminals": [
+    {
+      "name": "web",
+      "command": "python3 -m http.server 8000",
+      "description": "Static file server hosting the Sky Strike game at http://localhost:8000"
+    }
+  ]
+}
