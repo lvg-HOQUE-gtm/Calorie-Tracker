@@ -1,0 +1,28 @@
+---
+description: Ahaar AI project lessons — always on so past mistakes are not repeated
+alwaysApply: true
+---
+
+# Ahaar AI lessons (always apply)
+
+Canonical file: [LESSONS.md](../../LESSONS.md) at the repo root.
+
+Riham opens it anytime from the Cursor file tree: **`LESSONS.md`**.
+
+Before changing Cursor, Expo, EAS, Supabase, Play Store, `.env`, or `app.json`, follow that file. Do not repeat these mistakes:
+
+1. Custom Cursor API key + Cursor-hosted model → `ERROR_UNAUTHORIZED`. Sign in to Cursor; Gemini meal key is only a Supabase Edge Function secret.
+2. Never put `GEMINI_API_KEY` in `.env`, EAS, or `EXPO_PUBLIC_*`.
+3. `.env` values: no quotes, no spaces around `=`.
+4. Keep `expo-font` in `app.json` plugins; test a preview APK after font/icon changes.
+5. Demo Supabase client must be constructed after `DemoAuthClient` is defined.
+6. Do not put `npx expo start` in environment.json `start` (use `terminals`). Kitchen vs app branches stay separate. Builds need a real git repo.
+7. Cloud Agent `store/screenshots` paths are not files on the PC — use a gallery preview or git clone.
+8. Play needs a public privacy **URL** and a real email, not only `PRIVACY_POLICY.md`.
+9. Only camera + photos permissions; no extra storage permissions.
+10. Play wants `.aab` not preview `.apk`. Save the production keystore. Bump `versionCode`.
+11. Do not pin retired Gemini models; timeout analyze-meal; rate limits are not demo meals.
+12. Do not block shipping on Figma MCP rate limits.
+13. Group “today” in Asia/Dhaka, not UTC; no `Date.now()` in cached queries.
+
+Ads stay off until a new version updates the policy and Play Data safety form.

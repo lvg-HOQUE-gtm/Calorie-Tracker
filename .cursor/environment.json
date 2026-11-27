@@ -1,0 +1,17 @@
+{
+  "name": "Ahaar AI",
+  "install": "npm ci\ntest -f .env || cp .env.example .env",
+  "terminals": [
+    {
+      "name": "Expo web",
+      "command": "EXPO_NO_TELEMETRY=1 npx expo start --web --port 43127 --host lan",
+      "description": "Ahaar AI Expo web preview. Logs stay in this terminal so the agent can restart it."
+    }
+  ],
+  "ports": [
+    {
+      "name": "Expo web",
+      "port": 43127
+    }
+  ]
+}

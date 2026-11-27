@@ -1,0 +1,31 @@
+---
+description: Give Riham terminal commands one at a time
+alwaysApply: true
+---
+
+# One command at a time
+
+Riham is learning by running commands. Do not dump a script or a list of commands.
+
+## Required
+
+- Give **exactly one** shell command in a message.
+- Put that command in its own fenced `bash` block.
+- Say what it does in one short sentence.
+- Then stop. Wait for Riham to run it and paste the output (or say it worked / failed).
+- Only then give the next command.
+
+## Do not
+
+- Chain commands with `&&` or `;` unless they are one inseparable action (almost never).
+- Send `git fetch`, `git checkout`, and `eas build` in the same reply.
+- Send a numbered list of commands "for later".
+- Ask Riham to run the next command before the current one has finished.
+
+## If npm asks `Ok to proceed? (y)`
+
+Tell Riham to type **`y`** and press Enter. Do not give a different command in that same message.
+
+## Exceptions
+
+A single command may include flags (`npx eas-cli build --platform android --profile preview`). That is still one command.

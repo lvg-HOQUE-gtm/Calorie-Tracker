@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Ahaar AI",
+    "slug": "ahaar-ai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F8F9FA",
+    "scheme": "ahaarai",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ahaarai.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Ahaar AI uses your camera to scan and analyze your meals for accurate calorie tracking.",
+        "NSPhotoLibraryUsageDescription": "Ahaar AI needs access to your photos so you can select a meal picture to analyze."
+      }
+    },
+    "android": {
+      "package": "com.ahaarai.app",
+      "versionCode": 5,
+      "adaptiveIcon": {
+        "backgroundColor": "#A3E635",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Ahaar AI uses your camera to scan and analyze your meals for accurate calorie tracking."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Ahaar AI needs access to your photos so you can select a meal picture to analyze."
+        }
+      ],
+      [
+        "expo-font"
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#F8F9FA"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9440692f-03be-46f9-923d-22208a6d64d8"
+      }
+    }
+  }
+}
